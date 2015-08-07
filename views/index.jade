@@ -1,0 +1,5 @@
+extends layout
+
+block content
+  each l, index in all
+    li #{index + 1} 위 : #{l[0]} +#{l[2].gross - l[1]}점 (#{l[1]}, #{l[2].gross})
